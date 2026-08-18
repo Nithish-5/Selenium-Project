@@ -1,0 +1,7 @@
+scenario,username,password,expectedResult,expectedMessage
+Valid Login,tomsmith,SuperSecretPassword!,SUCCESS,You logged into a secure area!
+Invalid Username,wrongusername,wrongpassword,FAILURE,Your username is invalid!
+Invalid Password,tomsmith,WrongPassword123,FAILURE,Your password is invalid!
+Empty Username,,SuperSecretPassword!,FAILURE,Your username is invalid!
+Empty Password,tomsmith,,FAILURE,Your password is invalid!
+Empty Credentials,,,FAILURE,Your username is invalid!
